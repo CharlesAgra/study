@@ -1,0 +1,52 @@
+Containers
+----------
+
+* Docker é open source
+* Implantação de aplicativos dentro de containers
+* Idéia: Que os dados fiquem persistidos fora do container. Assim ele pode ser descartável(excluir e recriar ele novamente).
+* O container foi feito para ser descartavel(professor falou isso rs)...
+* Ideal: Excluir e Recriar o container sem perder a integridade do sistema
+
+Por que utilizar containers?
+
+* Implementação rápida
+* Reduz o tamanho
+* Portabilidade entre máquinas
+* Controle de Versão 
+* Imagens otimizadas
+* Compartilhamento
+* Manutenção Simplificada
+
+Rancher
+-------
+
+* Gerenciador de kubernetes
+* Health checks
+* Backup
+* Upgrades
+* Ele tem uma interface para nos ajudar a gerenciar
+
+Kubernetes
+----------
+
+* Gerenciador de containers
+* Open Source
+* Criado pelo Google
+
+Arquitetura
+-----------
+
+* CLI(kubectl) -> master(Kubernetes) -> node1, node2 e etc...
+* 1 master kubernetes pode gerenciar até 5 mil nós
+* Kubernetes master -> API Server, Scheduler, Controller, etcd(bd)
+* Com tudo isso acima o kubernets consegue orquestrar os containers
+
+Componentes do kubernets
+------------------------
+
+* pod -> Containers que trabalham em conjunto
+* services -> Pods que trabalham em conjunto
+* deployments -> Provê uma única declaração para Pods e ReplicaSets
+* labels -> Usado para organizar serviços
+* Cron job e etc....
+* deployment -> Descrever seus containers e quantos replicas você quer...
