@@ -37,3 +37,43 @@ var Cor;
 var minhaCor = Cor.Cinza;
 // Assim o valor que ele vai trazer é o Indice da enum
 console.log('my favority color -> ', minhaCor);
+// function
+var myName = '';
+var setName = function (params) {
+    myName = params;
+    return myName;
+};
+console.log('function -> ', setName('Charles'));
+// Tipando funcões
+var multiply;
+multiply = function (numberOne, numberTwo) {
+    return numberOne * numberTwo;
+};
+console.log('Multiply 9 and 4 => ', multiply(9, 4));
+// objeto
+var usuario = {
+    user: 'CharlesAgra',
+    pass: 'dhsjdkhsahdkjasdhjkas'
+};
+console.log('Usuário -> ', usuario);
+// chalenge
+var employee = {
+    supervisors: ["Little", "Gui", "David"],
+    workedHours: function (hour) {
+        return hour <= 8 ? 'Ponto Normal' : 'Fora do horário';
+    }
+};
+console.log('Ponto -> ', employee.workedHours(10));
+var employeeTwo = {
+    supervisors: ["Carlos", "Antonio"],
+    workedHours: function (hours) {
+        return hours <= 8 ? 'Ponto normal' : 'Fora do horário';
+    }
+};
+console.log('Type Ponto -> ', employeeTwo.workedHours(8));
+// Union Types
+// A variável nota pode ter dois tipos que é number e string.
+var nota = '10';
+console.log('string nota -> ', nota);
+nota = 10;
+console.log('number nota -> ', nota);
